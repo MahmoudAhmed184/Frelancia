@@ -1,8 +1,8 @@
-# Rasid | فريلانسيا
+# Rasid | راصد
 
 Rasid is a private cross-browser Manifest V3 WebExtension for Arabic freelancing platforms. It monitors supported job feeds, filters noisy listings, sends browser notifications, tracks projects, and helps draft proposals through a user-mediated ChatGPT bridge. Direct AI-provider requests are available only in intentionally unsafe side builds.
 
-ملخص بالعربية: فريلانسيا إضافة للمتصفحات تتابع فرص العمل الحر في منصات عربية مدعومة، تعرض تنبيهات، تحفظ المشاريع المتابعة، وتساعد في تجهيز عروض العمل عبر فتح ChatGPT مع نص جاهز للمراجعة اليدوية. الاتصال المباشر بمزودي AI موجود فقط في بناء جانبي غير آمن.
+ملخص بالعربية: راصد إضافة للمتصفحات تتابع فرص العمل الحر في منصات عربية مدعومة، تعرض تنبيهات، تحفظ المشاريع المتابعة، وتساعد في تجهيز عروض العمل عبر فتح ChatGPT مع نص جاهز للمراجعة اليدوية. الاتصال المباشر بمزودي AI موجود فقط في بناء جانبي غير آمن.
 
 ## Contents
 
@@ -43,7 +43,7 @@ Rasid is a private cross-browser Manifest V3 WebExtension for Arabic freelancing
 | Field                          | Current value                                                                        |
 | ------------------------------ | ------------------------------------------------------------------------------------ |
 | Package name                   | `rasid`                                                                          |
-| Extension name                 | `Rasid \| فريلانسيا`                                                             |
+| Extension name                 | `Rasid \| راصد`                                                             |
 | Version                        | `1.0.0`                                                                              |
 | Manifest version               | MV3                                                                                  |
 | Build system                   | WXT `^0.20.26`                                                                       |

@@ -21,7 +21,7 @@ The extension does not submit marketplace proposals automatically.
 | ----------------------------- | ------------------------------------------------------------------------------------------ |
 | Version                       | `1.0.0`                                                                                    |
 | Package name                  | `rasid`                                                                                |
-| Manifest name                 | `Rasid \| فريلانسيا`                                                                   |
+| Manifest name                 | `Rasid \| راصد`                                                                   |
 | Build system                  | WXT MV3                                                                                    |
 | Browser targets               | Chrome MV3 and Firefox MV3                                                                 |
 | Supported extension platforms | Mostaql, Khamsat, Nafezly                                                                  |

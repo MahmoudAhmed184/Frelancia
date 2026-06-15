@@ -28,7 +28,7 @@ export function mountKhamsatProjectPanel(input: MountKhamsatProjectPanelInput): 
     const root = createPanelRoot(input.document);
     const title = input.document.createElement('h3');
     title.className = 'rasid-khamsat-panel__title';
-    title.textContent = 'Rasid | فريلانسيا';
+    title.textContent = 'Rasid | راصد';
 
     const subtitle = input.document.createElement('p');
     subtitle.className = 'rasid-khamsat-panel__subtitle';

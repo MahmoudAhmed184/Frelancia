@@ -34,12 +34,12 @@ export function createRasidManifest(browser: string) {
     const isChrome = browser === 'chrome';
 
     return {
-        name: 'Rasid | فريلانسيا',
+        name: 'Rasid | راصد',
         short_name: 'Rasid',
         version: packageJson.version,
         description: 'تنبيهات فرص العمل الحر مع توليد عروض بالذكاء الاصطناعي',
         action: {
-            default_title: 'Rasid | فريلانسيا',
+            default_title: 'Rasid | راصد',
             default_popup: 'popup/index.html',
             default_icon: icons,
         },

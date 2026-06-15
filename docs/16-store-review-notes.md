@@ -7,7 +7,7 @@ This document summarizes review-facing behavior for Chrome Web Store and AMO pre
 Current WXT config generates:
 
 - MV3 manifest
-- extension name `Rasid | فريلانسيا`
+- extension name `Rasid | راصد`
 - short name `Rasid`
 - version `1.0.0`
 - Chrome minimum version `120`

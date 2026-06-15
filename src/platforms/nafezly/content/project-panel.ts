@@ -26,7 +26,7 @@ export function mountNafezlyProjectPanel(input: MountNafezlyProjectPanelInput): 
     const root = createPanelRoot(input.document);
     const title = input.document.createElement('h3');
     title.className = 'rasid-nafezly-panel__title';
-    title.textContent = 'Rasid | فريلانسيا';
+    title.textContent = 'Rasid | راصد';
 
     const subtitle = input.document.createElement('p');
     subtitle.className = 'rasid-nafezly-panel__subtitle';
