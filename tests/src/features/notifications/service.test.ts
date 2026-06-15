@@ -59,7 +59,7 @@ describe('notification service', () => {
             },
         ]);
 
-        expect(id).toMatch(/^frelancia-/);
+        expect(id).toMatch(/^rasid-/);
         expect(payloads.get(id)).toMatchObject({
             url: 'https://mostaql.com/project/123',
             jobId: '123',
@@ -119,7 +119,7 @@ describe('notification service', () => {
             type: 'basic',
             iconUrl: fakeBrowser.runtime.getURL('/platforms/Mostql.png'),
             title: 'مشروع جديد: فرصة كروم',
-            contextMessage: 'Frelancia - مستقل',
+            contextMessage: 'Rasid - مستقل',
             buttons: [{ title: '🔗 عرض تفاصيل المشروع' }],
         });
     });

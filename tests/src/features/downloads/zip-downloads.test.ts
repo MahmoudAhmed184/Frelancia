@@ -182,7 +182,7 @@ describe('ZIP download creation', () => {
             )
         ).resolves.toMatchObject({
             success: true,
-            filename: 'frelancia-export.zip',
+            filename: 'rasid-export.zip',
             objectUrl: 'blob:zip',
         });
 
