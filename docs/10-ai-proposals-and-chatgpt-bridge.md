@@ -1,6 +1,6 @@
 # AI Proposals And ChatGPT Bridge
 
-Frelancia supports bridge mode in normal builds. Direct provider mode exists only in unsafe side builds built with `WXT_ENABLE_UNSAFE_DIRECT_AI=true`.
+Rasid supports bridge mode in normal builds. Direct provider mode exists only in unsafe side builds built with `WXT_ENABLE_UNSAFE_DIRECT_AI=true`.
 
 ## Prompt Templates
 

@@ -101,8 +101,8 @@ Purpose: browser notification service and click payload lifecycle.
 Constants:
 
 - `NOTIFICATION_ALLOWED_HOSTS = ["mostaql.com", "khamsat.com", "nafezly.com"]`
-- job notification IDs start with `frelancia-`
-- admin notification IDs start with `frelancia-admin-`
+- job notification IDs start with `rasid-`
+- admin notification IDs start with `rasid-admin-`
 
 Functions:
 
@@ -129,7 +129,7 @@ Functions:
 | `getAudioContextCtor()`                                  | Returns global `AudioContext`.                  | none                             | constructor/undefined | Internal feature detection.                                           |
 | `playTone(audioContext, frequency, startTime, duration)` | Plays one sine tone.                            | audio context, frequency, timing | oscillator            | Creates oscillator/gain nodes.                                        |
 | `playSequence(steps)`                                    | Plays tone sequence and closes context.         | tone steps                       | `Promise<void>`       | Throws if `AudioContext` is unavailable; closes context in `finally`. |
-| `playNotificationAudioDirect()`                          | Plays Frelancia notification sound.             | none                             | `Promise<void>`       | Two-tone generated sound.                                             |
+| `playNotificationAudioDirect()`                          | Plays Rasid notification sound.             | none                             | `Promise<void>`       | Two-tone generated sound.                                             |
 | `createAudioService(offscreen)`                          | Registers audio task and returns audio service. | offscreen manager                | `AudioService`        | Uses offscreen/local task contract.                                   |
 
 ## Downloads

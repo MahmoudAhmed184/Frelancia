@@ -4,7 +4,7 @@ This document complements [`../PRIVACY.md`](../PRIVACY.md) with architecture-foc
 
 ## Data Minimization
 
-Frelancia stores only operational extension state needed for monitoring, notification, proposal drafting, tracking, UI settings, and exports.
+Rasid stores only operational extension state needed for monitoring, notification, proposal drafting, tracking, UI settings, and exports.
 
 Direct-mode API keys are session-scoped and omitted from persistent settings and backups.
 

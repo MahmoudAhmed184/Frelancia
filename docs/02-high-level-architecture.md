@@ -1,6 +1,6 @@
 # High-Level Architecture
 
-Frelancia uses a feature-first WebExtension architecture. WXT owns browser entrypoint discovery and manifest generation; the reusable logic lives under `src/`.
+Rasid uses a feature-first WebExtension architecture. WXT owns browser entrypoint discovery and manifest generation; the reusable logic lives under `src/`.
 
 ## Component Map
 

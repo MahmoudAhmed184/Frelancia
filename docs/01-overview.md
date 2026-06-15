@@ -1,10 +1,10 @@
 # Overview
 
-Frelancia is a cross-browser Manifest V3 WebExtension for monitoring Arabic freelancing opportunities and preparing user-reviewed proposals.
+Rasid is a cross-browser Manifest V3 WebExtension for monitoring Arabic freelancing opportunities and preparing user-reviewed proposals.
 
 ## Product Purpose
 
-Frelancia helps users:
+Rasid helps users:
 
 - monitor supported marketplace feeds
 - receive browser notifications for new filtered opportunities
@@ -20,8 +20,8 @@ The extension does not submit marketplace proposals automatically.
 | Area                          | Current state                                                                              |
 | ----------------------------- | ------------------------------------------------------------------------------------------ |
 | Version                       | `1.0.0`                                                                                    |
-| Package name                  | `frelancia`                                                                                |
-| Manifest name                 | `Frelancia \| فريلانسيا`                                                                   |
+| Package name                  | `rasid`                                                                                |
+| Manifest name                 | `Rasid \| فريلانسيا`                                                                   |
 | Build system                  | WXT MV3                                                                                    |
 | Browser targets               | Chrome MV3 and Firefox MV3                                                                 |
 | Supported extension platforms | Mostaql, Khamsat, Nafezly                                                                  |
@@ -43,7 +43,7 @@ The extension does not submit marketplace proposals automatically.
 | Browser             | Output             | Current generated behavior                                                                                              |
 | ------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | Chrome / Chromium   | `dist/chrome-mv3`  | Service worker background, `offscreen` permission, offscreen HTML page included.                                        |
-| Firefox             | `dist/firefox-mv3` | WXT Firefox MV3 output, no offscreen permission, Gecko ID `frelancia@mostaql-notifier`, strict minimum version `140.0`. |
+| Firefox             | `dist/firefox-mv3` | WXT Firefox MV3 output, no offscreen permission, Gecko ID `rasid@mostaql-notifier`, strict minimum version `140.0`. |
 | Firefox for Android | `dist/firefox-mv3` | Gecko Android strict minimum version `142.0`.                                                                           |
 
 ## Repository Scope

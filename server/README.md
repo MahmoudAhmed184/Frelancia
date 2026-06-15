@@ -1,4 +1,4 @@
-# Frelancia Optional SignalR Backend
+# Rasid Optional SignalR Backend
 
 This folder contains the ASP.NET Core backend used for realtime job notifications. The project builds and runs as `Rasid.Server`.
 

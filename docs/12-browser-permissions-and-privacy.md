@@ -39,7 +39,7 @@ ChatGPT optional hosts are emitted in normal builds. Provider optional hosts are
 
 Generated Firefox manifest settings include:
 
-- Gecko ID `frelancia@mostaql-notifier`
+- Gecko ID `rasid@mostaql-notifier`
 - strict minimum Firefox version `140.0`
 - required data collection permission `websiteContent`
 - Gecko Android strict minimum version `142.0`

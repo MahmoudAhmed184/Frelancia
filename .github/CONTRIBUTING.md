@@ -1,6 +1,6 @@
-# Contributing to Frelancia
+# Contributing to Rasid
 
-Frelancia is a cross-browser Manifest V3 extension built with WXT and TypeScript. Contributions should keep the shipped extension coherent across source, generated manifests, privacy text, documentation, and store-review expectations.
+Rasid is a cross-browser Manifest V3 extension built with WXT and TypeScript. Contributions should keep the shipped extension coherent across source, generated manifests, privacy text, documentation, and store-review expectations.
 
 ## Before You Start
 

@@ -1,6 +1,6 @@
 # Security Policy
 
-Frelancia is a browser extension that can read supported marketplace pages, store extension settings, inject a ChatGPT bridge script after optional host permission approval, open AI-provider requests only in unsafe direct-AI side builds, and insert generated proposal text into pages for user review. Security reports should avoid public disclosure until maintainers have had a chance to investigate.
+Rasid is a browser extension that can read supported marketplace pages, store extension settings, inject a ChatGPT bridge script after optional host permission approval, open AI-provider requests only in unsafe direct-AI side builds, and insert generated proposal text into pages for user review. Security reports should avoid public disclosure until maintainers have had a chance to investigate.
 
 ## Supported Versions
 

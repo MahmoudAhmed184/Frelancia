@@ -40,9 +40,9 @@ The browser ZIP commands are WXT package commands for the browser target and MV3
 
 Expected GitHub release ZIPs for `v1.0.0`:
 
-- `.output/frelancia-v1.0.0-chrome-mv3.zip`
-- `.output/frelancia-v1.0.0-firefox-mv3.zip`
-- `.output/frelancia-v1.0.0-firefox-sources.zip`
+- `.output/rasid-v1.0.0-chrome-mv3.zip`
+- `.output/rasid-v1.0.0-firefox-mv3.zip`
+- `.output/rasid-v1.0.0-firefox-sources.zip`
 
 ## Validation Commands
 

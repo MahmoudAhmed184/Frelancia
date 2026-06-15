@@ -7,13 +7,13 @@ This document summarizes review-facing behavior for Chrome Web Store and AMO pre
 Current WXT config generates:
 
 - MV3 manifest
-- extension name `Frelancia | فريلانسيا`
-- short name `Frelancia`
+- extension name `Rasid | فريلانسيا`
+- short name `Rasid`
 - version `1.0.0`
 - Chrome minimum version `120`
 - Firefox strict minimum version `140.0`
 - Firefox Android strict minimum version `142.0`
-- Gecko ID `frelancia@mostaql-notifier`
+- Gecko ID `rasid@mostaql-notifier`
 - action popup
 - dashboard/options page
 - background entrypoint

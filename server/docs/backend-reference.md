@@ -2,7 +2,7 @@
 
 ## Overview
 
-This backend is the real-time monitoring server used by the Frelancia extension. It does four things:
+This backend is the real-time monitoring server used by the Rasid extension. It does four things:
 
 1. polls supported marketplace listing pages on a schedule
 2. enriches newly detected items when a detail page can be fetched

@@ -1,6 +1,6 @@
 # Module Boundaries
 
-Frelancia uses source ownership boundaries to keep browser entrypoints thin and platform-specific behavior isolated.
+Rasid uses source ownership boundaries to keep browser entrypoints thin and platform-specific behavior isolated.
 
 ## Boundary Table
 

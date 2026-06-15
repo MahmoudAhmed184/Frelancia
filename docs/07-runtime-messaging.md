@@ -1,6 +1,6 @@
 # Runtime Messaging
 
-Frelancia uses validated message contracts for popup/dashboard/content/background/offscreen communication.
+Rasid uses validated message contracts for popup/dashboard/content/background/offscreen communication.
 
 ## Background Messages
 

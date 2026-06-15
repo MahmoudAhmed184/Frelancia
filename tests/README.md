@@ -1,4 +1,4 @@
-# Frelancia Test Suite
+# Rasid Test Suite
 
 The test suite is TypeScript-first and mirrors `src/` and `entrypoints/` ownership where practical.
 

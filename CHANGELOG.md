@@ -2,13 +2,13 @@
 
 ## v1.0.0 - 2026-06-05
 
-Initial GitHub release for Frelancia.
+Initial GitHub release for Rasid.
 
 ### Release Artifacts
 
-- Chrome MV3 extension package: `frelancia-v1.0.0-chrome-mv3.zip`.
-- Firefox MV3 extension package: `frelancia-v1.0.0-firefox-mv3.zip`.
-- Firefox review source package: `frelancia-v1.0.0-firefox-sources.zip`.
+- Chrome MV3 extension package: `rasid-v1.0.0-chrome-mv3.zip`.
+- Firefox MV3 extension package: `rasid-v1.0.0-firefox-mv3.zip`.
+- Firefox review source package: `rasid-v1.0.0-firefox-sources.zip`.
 - SHA-256 checksum manifest: `SHA256SUMS.txt`.
 - Build and manifest evidence: `release-evidence.json`.
 

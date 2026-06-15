@@ -1,6 +1,6 @@
 # Storage And State
 
-Frelancia stores extension state through browser storage wrappers and storage modules.
+Rasid stores extension state through browser storage wrappers and storage modules.
 
 ## Storage Areas
 
@@ -69,7 +69,7 @@ Important settings rules:
 
 The dashboard validates and previews backup imports before calling `importAll()`.
 
-Dashboard export downloads as `frelancia_backup_<YYYY-MM-DD>.json`.
+Dashboard export downloads as `rasid_backup_<YYYY-MM-DD>.json`.
 
 ## Admin Messages
 

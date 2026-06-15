@@ -1,6 +1,6 @@
-# Frelancia Documentation
+# Rasid Documentation
 
-This directory documents the current Frelancia WebExtension source tree. The source of truth is the current code, config, generated manifest behavior, README, and privacy policy.
+This directory documents the current Rasid WebExtension source tree. The source of truth is the current code, config, generated manifest behavior, README, and privacy policy.
 
 ## Recommended Reading Paths
 
