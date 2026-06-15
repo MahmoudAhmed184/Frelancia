@@ -34,12 +34,12 @@ export function createRasidManifest(browser: string) {
     const isChrome = browser === 'chrome';
 
     return {
-        name: 'Frelancia | فريلانسيا',
-        short_name: 'Frelancia',
+        name: 'Rasid | فريلانسيا',
+        short_name: 'Rasid',
         version: packageJson.version,
         description: 'تنبيهات فرص العمل الحر مع توليد عروض بالذكاء الاصطناعي',
         action: {
-            default_title: 'Frelancia | فريلانسيا',
+            default_title: 'Rasid | فريلانسيا',
             default_popup: 'popup/index.html',
             default_icon: icons,
         },
@@ -59,7 +59,7 @@ export function createRasidManifest(browser: string) {
             ? undefined
             : {
                   gecko: {
-                      id: 'frelancia@mostaql-notifier',
+                      id: 'rasid@mostaql-notifier',
                       strict_min_version: '140.0',
                       data_collection_permissions: {
                           required: ['websiteContent'],
@@ -102,8 +102,8 @@ export default defineConfig({
     outDirTemplate: '{{browser}}-mv{{manifestVersion}}',
     manifestVersion: 3,
     zip: {
-        artifactTemplate: 'frelancia-v{{version}}-{{browser}}-{{manifestVersion}}.zip',
-        sourcesTemplate: 'frelancia-v{{version}}-{{browser}}-sources.zip',
+        artifactTemplate: 'rasid-v{{version}}-{{browser}}-{{manifestVersion}}.zip',
+        sourcesTemplate: 'rasid-v{{version}}-{{browser}}-sources.zip',
         excludeSources: [
             'coverage/**',
             'playwright-report/**',

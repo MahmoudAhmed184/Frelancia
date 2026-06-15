@@ -59,7 +59,7 @@ jobs:
                   fi
                   echo "version=$PACKAGE_VERSION" >> "$GITHUB_OUTPUT"
                   echo "tag=v$PACKAGE_VERSION" >> "$GITHUB_OUTPUT"
-                  echo "artifact_name=frelancia-v$PACKAGE_VERSION-release-assets" >> "$GITHUB_OUTPUT"
+                  echo "artifact_name=rasid-v$PACKAGE_VERSION-release-assets" >> "$GITHUB_OUTPUT"
 
             - name: Run release checks
               run: xvfb-run -a npm run release:check
@@ -108,14 +108,14 @@ jobs:
               run: |
                   gh release create "$RELEASE_TAG" \
                     --repo "$GITHUB_REPOSITORY" \
-                    "release-assets/frelancia-v$RELEASE_VERSION-chrome-mv3.zip" \
-                    "release-assets/frelancia-v$RELEASE_VERSION-firefox-mv3.zip" \
-                    "release-assets/frelancia-v$RELEASE_VERSION-firefox-sources.zip" \
+                    "release-assets/rasid-v$RELEASE_VERSION-chrome-mv3.zip" \
+                    "release-assets/rasid-v$RELEASE_VERSION-firefox-mv3.zip" \
+                    "release-assets/rasid-v$RELEASE_VERSION-firefox-sources.zip" \
                     "release-assets/SHA256SUMS.txt" \
                     "release-assets/release-evidence.json" \
                     --draft \
                     --target "$GITHUB_SHA" \
-                    --title "Frelancia $RELEASE_TAG" \
+                    --title "Rasid $RELEASE_TAG" \
                     --notes-file release-assets/release-notes.md
 
     attest:

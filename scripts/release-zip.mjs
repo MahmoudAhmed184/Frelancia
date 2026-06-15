@@ -12,9 +12,9 @@ const outputDir = path.join(root, '.output');
 const distDir = path.join(root, 'dist');
 const version = packageJson.version;
 const expectedArtifacts = [
-    `frelancia-v${version}-chrome-mv3.zip`,
-    `frelancia-v${version}-firefox-mv3.zip`,
-    `frelancia-v${version}-firefox-sources.zip`,
+    `rasid-v${version}-chrome-mv3.zip`,
+    `rasid-v${version}-firefox-mv3.zip`,
+    `rasid-v${version}-firefox-sources.zip`,
 ];
 
 function runWxtZip(browser) {
@@ -35,7 +35,7 @@ async function removeDistReleaseZips() {
     }
 
     const entries = await readdir(distDir);
-    const releaseZipPrefix = `frelancia-v${version}-`;
+    const releaseZipPrefix = `rasid-v${version}-`;
 
     await Promise.all(
         entries

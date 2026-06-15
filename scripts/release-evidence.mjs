@@ -13,9 +13,9 @@ const outputDir = path.join(root, '.output');
 const requestedVersion = normalizeVersion(process.argv[2] ?? packageJson.version);
 const version = packageJson.version;
 const expectedArtifacts = [
-    `frelancia-v${version}-chrome-mv3.zip`,
-    `frelancia-v${version}-firefox-mv3.zip`,
-    `frelancia-v${version}-firefox-sources.zip`,
+    `rasid-v${version}-chrome-mv3.zip`,
+    `rasid-v${version}-firefox-mv3.zip`,
+    `rasid-v${version}-firefox-sources.zip`,
 ];
 
 function normalizeVersion(value) {
@@ -126,7 +126,7 @@ const evidence = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
     release: {
-        name: 'Frelancia',
+        name: 'Rasid',
         tag: `v${version}`,
         githubOnly: true,
         browserStoreSubmission: false,
