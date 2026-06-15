@@ -91,7 +91,7 @@ function buildNotificationBody(jobs: JobRecord[]): {
 
     let title: string;
     let message: string;
-    const contextMessage = `Frelancia - ${platformLabel}`;
+    const contextMessage = `Rasid - ${platformLabel}`;
 
     if (jobs.length === 1) {
         title = `مشروع جديد: ${primary.title}`;
@@ -161,7 +161,7 @@ export function createNotificationService(storage: ExtensionStorage): Notificati
 
     async function showJobsNotification(jobs: JobRecord[]): Promise<string> {
         const { title, message, contextMessage, primary } = buildNotificationBody(jobs);
-        const notificationId = `frelancia-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+        const notificationId = `rasid-${Date.now()}-${Math.random().toString(36).slice(2)}`;
         const payloadUrl = normalizeNotificationUrl(primary.url);
 
         if (payloadUrl) {
@@ -202,7 +202,7 @@ export function createNotificationService(storage: ExtensionStorage): Notificati
     }
 
     async function showAdminMessageNotification(msg: AdminMessage): Promise<string> {
-        const notificationId = `frelancia-admin-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+        const notificationId = `rasid-admin-${Date.now()}-${Math.random().toString(36).slice(2)}`;
         const payloadUrl = msg.url ? normalizeNotificationUrl(msg.url) : null;
 
         if (payloadUrl) {
@@ -226,7 +226,7 @@ export function createNotificationService(storage: ExtensionStorage): Notificati
                               iconUrl: getNotificationIcon(undefined),
                               title: '📢 تنبيهات من المطورين',
                               message: msg.message,
-                              contextMessage: 'Frelancia',
+                              contextMessage: 'Rasid',
                           }
                 )
             );
