@@ -10,6 +10,7 @@ export function createKhamsatMonitoringAdapter(
         id: 'khamsat',
         displayName: 'Khamsat',
         debugProbeUrl: KHAMSAT_FEEDS.requests,
+        hydrationDelayMs: 2000,
         resolveFeeds(settings) {
             return isPlatformMonitoringEnabled(settings, 'khamsat') ? [KHAMSAT_FEEDS.requests] : [];
         },

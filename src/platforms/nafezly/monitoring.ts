@@ -10,6 +10,7 @@ export function createNafezlyMonitoringAdapter(
         id: 'nafezly',
         displayName: 'Nafezly',
         debugProbeUrl: NAFEZLY_FEEDS.projects,
+        hydrationDelayMs: 1000,
         resolveFeeds(settings) {
             return isPlatformMonitoringEnabled(settings, 'nafezly') ? [NAFEZLY_FEEDS.projects] : [];
         },

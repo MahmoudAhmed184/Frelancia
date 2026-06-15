@@ -138,6 +138,7 @@ export interface PlatformMonitoringAdapter {
     readonly id: PlatformId;
     readonly displayName: string;
     readonly debugProbeUrl: string;
+    readonly hydrationDelayMs?: number;
     resolveFeeds(settings: Readonly<ExtensionSettings>): ReadonlyArray<string>;
     parseListingHtml(html: string): Promise<readonly JobRecord[]>;
     parseProjectHtml(html: string): Promise<Partial<JobRecord> | null>;

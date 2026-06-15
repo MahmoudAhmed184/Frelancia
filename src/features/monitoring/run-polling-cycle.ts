@@ -1,5 +1,6 @@
 import { applyJobFilters } from './job-filters';
 import { fetchPlatformFeedJobsResult, hydratePlatformJob } from './fetch-platform-html';
+import { delay } from '../../shared/network/delay';
 import {
     createFailedJobBatchResult,
     createNoopJobBatchResult,
@@ -44,6 +45,7 @@ export async function runPollingCycle(options: {
     const settings = snapshot.settings;
     const attemptedAt = new Date().toISOString();
     const monitoringErrors: Record<string, { message: string; failedAt: string }> = {};
+    const lastHydrationTime = new Map<PlatformId, number>();
 
     if (settings.systemEnabled === false) {
         await storage.touchLastCheck(`${reason}:disabled`);
@@ -126,7 +128,18 @@ export async function runPollingCycle(options: {
 
         const jobKey = getJobRecordKey(job);
         const monitoringAdapter = monitoringById.get('khamsat');
-        const hydrated = monitoringAdapter ? await hydratePlatformJob(monitoringAdapter, job) : job;
+        let hydrated = job;
+        if (monitoringAdapter) {
+            if (monitoringAdapter.hydrationDelayMs) {
+                const last = lastHydrationTime.get('khamsat') ?? 0;
+                const elapsed = Date.now() - last;
+                if (elapsed < monitoringAdapter.hydrationDelayMs) {
+                    await delay(monitoringAdapter.hydrationDelayMs - elapsed);
+                }
+            }
+            hydrated = await hydratePlatformJob(monitoringAdapter, job);
+            lastHydrationTime.set('khamsat', Date.now());
+        }
         const freshness = classifyKhamsatFreshness(hydrated, freshnessNow);
 
         if (freshness === 'fresh') {
@@ -162,11 +175,21 @@ export async function runPollingCycle(options: {
     const hydratedJobs: JobRecord[] = [];
 
     for (const job of ingested.newJobs) {
-        const monitoringAdapter = monitoringById.get(resolveJobPlatformId(job));
-        const hydrated =
-            resolveJobPlatformId(job) === 'khamsat' || !monitoringAdapter
-                ? job
-                : await hydratePlatformJob(monitoringAdapter, job);
+        const platformId = resolveJobPlatformId(job);
+        const monitoringAdapter = monitoringById.get(platformId);
+        let hydrated = job;
+
+        if (platformId !== 'khamsat' && monitoringAdapter) {
+            if (monitoringAdapter.hydrationDelayMs) {
+                const last = lastHydrationTime.get(platformId) ?? 0;
+                const elapsed = Date.now() - last;
+                if (elapsed < monitoringAdapter.hydrationDelayMs) {
+                    await delay(monitoringAdapter.hydrationDelayMs - elapsed);
+                }
+            }
+            hydrated = await hydratePlatformJob(monitoringAdapter, job);
+            lastHydrationTime.set(platformId, Date.now());
+        }
 
         if (applyJobFilters(hydrated, settings)) {
             hydratedJobs.push(hydrated);

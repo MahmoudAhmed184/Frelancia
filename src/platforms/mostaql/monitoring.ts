@@ -10,6 +10,7 @@ export function createMostaqlMonitoringAdapter(
         id: 'mostaql',
         displayName: 'Mostaql',
         debugProbeUrl: MOSTAQL_FEEDS.all,
+        hydrationDelayMs: 3000,
         resolveFeeds(settings) {
             if (!isPlatformMonitoringEnabled(settings, 'mostaql')) {
                 return [];
