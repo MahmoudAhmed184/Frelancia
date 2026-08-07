@@ -11,7 +11,10 @@ export default defineConfig(
         gitignoreResolution: true,
         name: 'Imported .gitignore patterns',
     }),
-    globalIgnores(['**/vendor/**', '**/*.min.js', 'package-lock.json'], 'Rasid lint-only ignores'),
+    globalIgnores(
+        ['**/vendor/**', '**/*.min.js', 'package-lock.json', '.agents/**'],
+        'Rasid lint-only ignores'
+    ),
     {
         name: 'Rasid linter options',
         linterOptions: {

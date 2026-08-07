@@ -8,10 +8,12 @@ coverage/
 test-results/
 playwright-report/
 
-# OS / editor artifacts
+# OS / editor / agent artifacts
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
 .vscode/
 .idea/Approved
+.agents/
+skills-lock.json

@@ -20,8 +20,8 @@ The extension does not submit marketplace proposals automatically.
 | Area                          | Current state                                                                              |
 | ----------------------------- | ------------------------------------------------------------------------------------------ |
 | Version                       | `1.0.0`                                                                                    |
-| Package name                  | `rasid`                                                                                |
-| Manifest name                 | `Rasid \| راصد`                                                                   |
+| Package name                  | `rasid`                                                                                    |
+| Manifest name                 | `Rasid \| راصد`                                                                            |
 | Build system                  | WXT MV3                                                                                    |
 | Browser targets               | Chrome MV3 and Firefox MV3                                                                 |
 | Supported extension platforms | Mostaql, Khamsat, Nafezly                                                                  |
@@ -40,11 +40,11 @@ The extension does not submit marketplace proposals automatically.
 
 ## Browser Targets
 
-| Browser             | Output             | Current generated behavior                                                                                              |
-| ------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| Chrome / Chromium   | `dist/chrome-mv3`  | Service worker background, `offscreen` permission, offscreen HTML page included.                                        |
+| Browser             | Output             | Current generated behavior                                                                                          |
+| ------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Chrome / Chromium   | `dist/chrome-mv3`  | Service worker background, `offscreen` permission, offscreen HTML page included.                                    |
 | Firefox             | `dist/firefox-mv3` | WXT Firefox MV3 output, no offscreen permission, Gecko ID `rasid@mostaql-notifier`, strict minimum version `140.0`. |
-| Firefox for Android | `dist/firefox-mv3` | Gecko Android strict minimum version `142.0`.                                                                           |
+| Firefox for Android | `dist/firefox-mv3` | Gecko Android strict minimum version `142.0`.                                                                       |
 
 ## Repository Scope
 

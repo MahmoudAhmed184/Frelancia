@@ -1,6 +1,6 @@
 {
     "name": "rasid",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "type": "module",
     "description": "Cross-browser Manifest V3 build pipeline for the Rasid (راصد) WebExtension",

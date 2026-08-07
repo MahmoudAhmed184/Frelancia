@@ -211,12 +211,12 @@ Constants:
 
 Functions:
 
-| Function                               | Purpose                                                                          | Inputs             | Outputs         | Side effects, errors, security                                                                            |
-| -------------------------------------- | -------------------------------------------------------------------------------- | ------------------ | --------------- | --------------------------------------------------------------------------------------------------------- |
-| `isUnsafeDirectAiEnabled()`            | Checks build-time unsafe direct-AI flag.                                         | none               | boolean         | Reads `WXT_ENABLE_UNSAFE_DIRECT_AI`.                                                                      |
+| Function                               | Purpose                                                                          | Inputs             | Outputs         | Side effects, errors, security                                                                        |
+| -------------------------------------- | -------------------------------------------------------------------------------- | ------------------ | --------------- | ----------------------------------------------------------------------------------------------------- |
+| `isUnsafeDirectAiEnabled()`            | Checks build-time unsafe direct-AI flag.                                         | none               | boolean         | Reads `WXT_ENABLE_UNSAFE_DIRECT_AI`.                                                                  |
 | `createRasidManifest(browser)`         | Generates browser-specific manifest fields.                                      | browser target     | manifest object | Emits Rasid names, required hosts, optional ChatGPT hosts, and unsafe provider hosts only when gated. |
-| `stripSignalRInvalidPureAnnotations()` | Vite plugin that removes invalid pure annotations from SignalR ESM utility file. | none               | Vite plugin     | Transform applies only to `node_modules/@microsoft/signalr/dist/esm/Utils.js`.                            |
-| `manifest({ browser })`                | Delegates manifest generation.                                                   | WXT browser target | manifest object | Chrome gets `offscreen` and minimum Chrome version; Firefox gets Gecko settings and no `offscreen`.       |
+| `stripSignalRInvalidPureAnnotations()` | Vite plugin that removes invalid pure annotations from SignalR ESM utility file. | none               | Vite plugin     | Transform applies only to `node_modules/@microsoft/signalr/dist/esm/Utils.js`.                        |
+| `manifest({ browser })`                | Delegates manifest generation.                                                   | WXT browser target | manifest object | Chrome gets `offscreen` and minimum Chrome version; Firefox gets Gecko settings and no `offscreen`.   |
 
 Host permissions are exactly listed in [`../../12-browser-permissions-and-privacy.md`](../../12-browser-permissions-and-privacy.md).
 

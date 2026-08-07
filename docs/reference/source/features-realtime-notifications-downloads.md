@@ -129,7 +129,7 @@ Functions:
 | `getAudioContextCtor()`                                  | Returns global `AudioContext`.                  | none                             | constructor/undefined | Internal feature detection.                                           |
 | `playTone(audioContext, frequency, startTime, duration)` | Plays one sine tone.                            | audio context, frequency, timing | oscillator            | Creates oscillator/gain nodes.                                        |
 | `playSequence(steps)`                                    | Plays tone sequence and closes context.         | tone steps                       | `Promise<void>`       | Throws if `AudioContext` is unavailable; closes context in `finally`. |
-| `playNotificationAudioDirect()`                          | Plays Rasid notification sound.             | none                             | `Promise<void>`       | Two-tone generated sound.                                             |
+| `playNotificationAudioDirect()`                          | Plays Rasid notification sound.                 | none                             | `Promise<void>`       | Two-tone generated sound.                                             |
 | `createAudioService(offscreen)`                          | Registers audio task and returns audio service. | offscreen manager                | `AudioService`        | Uses offscreen/local task contract.                                   |
 
 ## Downloads

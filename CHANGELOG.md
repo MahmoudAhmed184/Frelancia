@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.0.1 - 2026-08-07
+
+Maintenance release with rebranding updates and monitoring stability improvements.
+
+### Release Artifacts
+
+- Chrome MV3 extension package: `rasid-v1.0.1-chrome-mv3.zip`.
+- Firefox MV3 extension package: `rasid-v1.0.1-firefox-mv3.zip`.
+- Firefox review source package: `rasid-v1.0.1-firefox-sources.zip`.
+- SHA-256 checksum manifest: `SHA256SUMS.txt`.
+- Build and manifest evidence: `release-evidence.json`.
+
+### Fixed & Improved
+
+- Rebranded extension name, documentation, tests, and configuration from Freelancia (فريلانسيا) to Rasid (راصد).
+- Implemented per-platform rate limiting for job hydration to prevent request bursts and rate limits during monitoring.
+
 ## v1.0.0 - 2026-06-05
 
 Initial GitHub release for Rasid.
